@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_main.css">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            font-family: 'Bebas Neue';
+            background-color: #141414;
+        }
+        h1{
+            color: white;
+        }
+     
+        .flx{
+        display:flex;
+        flex-wrap: wrap;
+        gap:1.5vw;
+        margin-left: 30px;
+         
+    }
+    .nav1{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .btn{
+        width: 100px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+        </style>
+</head>
+<body>
+    <div class="container-fluid nav1">
+        <div>
+            <h1>Aventura</h1>
+        </div>
+        <div><a href="index_main.html"><button class="btn btn-danger">Home</button></a></div>
+    </div>
+    <div class="container-fluid flx">
+        <div class="col">
+            <a href="aventura/1917.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"  poster="aventura/1917_img.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                    <source src="aventura/1917.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating12" value="5" id="512"><label for="512">☆</label>
+                        <input type="radio" name="rating12" value="4" id="412"><label for="412">☆</label>
+                        <input type="radio" name="rating12" value="3" id="312"><label for="312">☆</label>
+                        <input type="radio" name="rating12" value="2" id="212"><label for="212">☆</label>
+                        <input type="radio" name="rating12" value="1" id="112"><label for="112">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 97% Concordanta</span><span class="varsta">  16+</span><span class="nume">1917</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/assasins.html">
+                <div class="square">
+                    <video class="vid" width="280" height="200"  poster="aventura/assasins.jpg" muted  onmouseover="this.play();" onmouseout="this.load();"   >
+                        <source src="aventura/assasins.mp4" type="video/mp4">
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating13" value="5" id="513"><label for="513">☆</label>
+                        <input type="radio" name="rating13" value="4" id="413"><label for="413">☆</label>
+                        <input type="radio" name="rating13" value="3" id="313"><label for="313">☆</label>
+                        <input type="radio" name="rating13" value="2" id="213"><label for="213">☆</label>
+                        <input type="radio" name="rating13" value="1" id="113"><label for="113">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 95% Concordanta</span><span class="varsta">  13+</span><span class="nume">Assassin's Creed</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/avatar.html">
+                <div class="square">
+                    <video class="vid" width="280" height="200"  poster="aventura/avatar.jpg" muted  onmouseover="this.play();" onmouseout="this.load();"   >
+                        <source src="aventura/avatar.mp4" type="video/mp4">
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating14" value="5" id="514"><label for="514">☆</label>
+                        <input type="radio" name="rating14" value="4" id="414"><label for="414">☆</label>
+                        <input type="radio" name="rating14" value="3" id="314"><label for="314">☆</label>
+                        <input type="radio" name="rating14" value="2" id="214"><label for="214">☆</label>
+                        <input type="radio" name="rating14" value="1" id="114"><label for="114">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 93% Concordanta</span><span class="varsta">  13+</span><span class="nume">Avatar</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/desertul.html">
+                <div class="square">
+                    <video class="vid" width="280" height="200"  poster="aventura/desertul_de_gheata.jpg" muted  onmouseover="this.play();" onmouseout="this.load();"   >
+                        <source src="aventura/desertul_de_gheata.mp4" type="video/mp4">
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating15" value="5" id="515"><label for="515">☆</label>
+                        <input type="radio" name="rating15" value="4" id="415"><label for="415">☆</label>
+                        <input type="radio" name="rating15" value="3" id="315"><label for="315">☆</label>
+                        <input type="radio" name="rating15" value="2" id="215"><label for="215">☆</label>
+                        <input type="radio" name="rating15" value="1" id="115"><label for="115">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 98% Concordanta</span><span class="varsta">  16+</span><span class="nume">Desertul de Ghea</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/hobbit.html">
+                <div class="square">
+                    <video class="vid" width="280" height="200"  poster="aventura/hobbit.jpg" muted  onmouseover="this.play();" onmouseout="this.load();"   >
+                        <source src="aventura/hobbit.mp4" type="video/mp4">
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating16" value="5" id="516"><label for="516">☆</label>
+                        <input type="radio" name="rating16" value="4" id="416"><label for="416">☆</label>
+                        <input type="radio" name="rating16" value="3" id="316"><label for="316">☆</label>
+                        <input type="radio" name="rating16" value="2" id="216"><label for="216">☆</label>
+                        <input type="radio" name="rating16" value="1" id="116"><label for="116">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 96% Concordanta</span><span class="varsta">  13+</span><span class="nume">Hobbit</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/jumanji.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="aventura/jumanji2.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="aventura/jumanji.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating90" value="5" id="590"><label for="590">☆</label>
+                        <input type="radio" name="rating90" value="4" id="490"><label for="490">☆</label>
+                        <input type="radio" name="rating90" value="3" id="390"><label for="390">☆</label>
+                        <input type="radio" name="rating90" value="2" id="290"><label for="290">☆</label>
+                        <input type="radio" name="rating90" value="1" id="190"><label for="190">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 97% Concordanta</span><span class="varsta">  16+</span><span class="nume">Jumanji</span></div>
+                </div>  
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/jurassic.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="aventura/jurassic_world.jpg" muted onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="aventura/jurassic_world.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating17" value="5" id="517"><label for="517">☆</label>
+                        <input type="radio" name="rating17" value="4" id="417"><label for="417">☆</label>
+                        <input type="radio" name="rating17" value="3" id="317"><label for="317">☆</label>
+                        <input type="radio" name="rating17" value="2" id="217"><label for="217">☆</label>
+                        <input type="radio" name="rating17" value="1" id="117"><label for="117">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 91% Concordanta</span><span class="varsta">  16+</span><span class="nume">Jurassic World</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/maze.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="aventura/maze.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="aventura/labirintul.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating18" value="5" id="518"><label for="518">☆</label>
+                        <input type="radio" name="rating18" value="4" id="418"><label for="418">☆</label>
+                        <input type="radio" name="rating18" value="3" id="318"><label for="318">☆</label>
+                        <input type="radio" name="rating18" value="2" id="218"><label for="218">☆</label>
+                        <input type="radio" name="rating18" value="1" id="118"><label for="118">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 97% Concordanta</span><span class="varsta">  16+</span><span class="nume">Maze Runner</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/monsters.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="aventura/monsters.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="aventura/monsters.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating19" value="5" id="519"><label for="519">☆</label>
+                        <input type="radio" name="rating19" value="4" id="419"><label for="419">☆</label>
+                        <input type="radio" name="rating19" value="3" id="319"><label for="319">☆</label>
+                        <input type="radio" name="rating19" value="2" id="219"><label for="219">☆</label>
+                        <input type="radio" name="rating19" value="1" id="119"><label for="119">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 91% Concordanta</span><span class="varsta">  16+</span><span class="nume">Monsters</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/mumia.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="aventura/mumy2.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="aventura/mumia.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating20" value="5" id="520"><label for="520">☆</label>
+                        <input type="radio" name="rating20" value="4" id="420"><label for="420">☆</label>
+                        <input type="radio" name="rating20" value="3" id="320"><label for="320">☆</label>
+                        <input type="radio" name="rating20" value="2" id="220"><label for="220">☆</label>
+                        <input type="radio" name="rating20" value="1" id="120"><label for="120">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 90% Concordanta</span><span class="varsta">  16+</span><span class="nume">The Mummy</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/wonder_woman.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="aventura/wonder2.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="aventura/wonder_woman.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating21" value="5" id="521"><label for="521">☆</label>
+                        <input type="radio" name="rating21" value="4" id="421"><label for="421">☆</label>
+                        <input type="radio" name="rating21" value="3" id="321"><label for="321">☆</label>
+                        <input type="radio" name="rating21" value="2" id="221"><label for="221">☆</label>
+                        <input type="radio" name="rating21" value="1" id="121"><label for="121">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 96% Concordanta</span><span class="varsta">  16+</span><span class="nume">Wonder Woman</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="aventura/zeii_egiptului.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="aventura/zeii_egiptului.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="aventura/zeii_egiptului.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating22" value="5" id="522"><label for="522">☆</label>
+                        <input type="radio" name="rating22" value="4" id="422"><label for="422">☆</label>
+                        <input type="radio" name="rating22" value="3" id="322"><label for="322">☆</label>
+                        <input type="radio" name="rating22" value="2" id="222"><label for="222">☆</label>
+                        <input type="radio" name="rating22" value="1" id="122"><label for="122">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 92% Concordanta</span><span class="varsta">  16+</span><span class="nume">Zeii Egiptului</span></div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+    
+</body>
+</html>

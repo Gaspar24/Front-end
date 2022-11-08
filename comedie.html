@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_main.css">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            font-family: 'Bebas Neue';
+            background-color: #141414;
+        }
+        h1{
+            color: white;
+        }
+
+        .flx{
+        display:flex;
+        flex-wrap: wrap;
+        gap:1.5vw;
+        margin-left: 30px;
+         
+        }
+        .nav1{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 10px;
+     }
+    .btn{
+         width: 100px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+        </style>
+</head>
+<body>
+    <div class="container-fluid nav1">
+        <div>
+            <h1>Comedie</h1>
+        </div>
+        <div><a href="index_main.html"><button class="btn btn-danger">Home</button></a></div>
+    </div>
+    <div class="container-fluid flx">
+        <div class="col">
+            <a href="comedie/american.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"  poster="comedie/american.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                    <source src="comedie/american.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating23" value="5" id="523"><label for="523">☆</label>
+                        <input type="radio" name="rating23" value="4" id="423"><label for="423">☆</label>
+                        <input type="radio" name="rating23" value="3" id="323"><label for="323">☆</label>
+                        <input type="radio" name="rating23" value="2" id="223"><label for="223">☆</label>
+                        <input type="radio" name="rating23" value="1" id="123"><label for="123">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 97% Concordanta</span><span class="varsta">  16+</span><span class="nume">American Pie</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/baywatch.html">
+                <div class="square">
+                    <video class="vid" width="280" height="200"  poster="comedie/baywatch.jpg" muted  onmouseover="this.play();" onmouseout="this.load();"   >
+                        <source src="comedie/baywatch.mp4" type="video/mp4">
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating91" value="5" id="591"><label for="591">☆</label>
+                        <input type="radio" name="rating91" value="4" id="491"><label for="491">☆</label>
+                        <input type="radio" name="rating91" value="3" id="391"><label for="391">☆</label>
+                        <input type="radio" name="rating91" value="2" id="291"><label for="291">☆</label>
+                        <input type="radio" name="rating91" value="1" id="191"><label for="191">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 95% Concordanta</span><span class="varsta">  13+</span><span class="nume">Baywatch</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/bodyguard.html">
+                <div class="square">
+                    <video class="vid" width="280" height="200"  poster="comedie/bodyguard.jpg" muted  onmouseover="this.play();" onmouseout="this.load();"   >
+                        <source src="comedie/bodyguard.mp4" type="video/mp4">
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating24" value="5" id="524"><label for="524">☆</label>
+                        <input type="radio" name="rating24" value="4" id="424"><label for="424">☆</label>
+                        <input type="radio" name="rating24" value="3" id="324"><label for="324">☆</label>
+                        <input type="radio" name="rating24" value="2" id="224"><label for="224">☆</label>
+                        <input type="radio" name="rating24" value="1" id="124"><label for="124">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 93% Concordanta</span><span class="varsta">  13+</span><span class="nume">Hitman's Bodyguard</span> </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/central.html">
+                <div class="square">
+                    <video class="vid" width="280" height="200"  poster="comedie/central.jpg" muted fullscreen onmouseover="this.play();" onmouseout="this.load();"   >
+                        <source src="comedie/central.mp4" type="video/mp4">
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating25" value="5" id="525"><label for="525">☆</label>
+                        <input type="radio" name="rating25" value="4" id="425"><label for="425">☆</label>
+                        <input type="radio" name="rating25" value="3" id="325"><label for="325">☆</label>
+                        <input type="radio" name="rating25" value="2" id="225"><label for="225">☆</label>
+                        <input type="radio" name="rating25" value="1" id="125"><label for="125">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 98% Concordanta</span><span class="varsta">  16+</span><span class="nume">Central Intelligence</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/change.html">
+                <div class="square">
+                    <video class="vid" width="280" height="200"  poster="comedie/change_up.jpg" muted  onmouseover="this.play();" onmouseout="this.load();"   >
+                        <source src="comedie/change.mp4" type="video/mp4">
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating26" value="5" id="526"><label for="526">☆</label>
+                        <input type="radio" name="rating26" value="4" id="426"><label for="426">☆</label>
+                        <input type="radio" name="rating26" value="3" id="326"><label for="326">☆</label>
+                        <input type="radio" name="rating26" value="2" id="226"><label for="226">☆</label>
+                        <input type="radio" name="rating26" value="1" id="126"><label for="126">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 96% Concordanta</span><span class="varsta">  13+</span><span class="nume">Change-Up</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/cops.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="comedie/cops.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="comedie/lets_be_cops.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating27" value="5" id="527"><label for="527">☆</label>
+                        <input type="radio" name="rating27" value="4" id="427"><label for="427">☆</label>
+                        <input type="radio" name="rating27" value="3" id="327"><label for="327">☆</label>
+                        <input type="radio" name="rating27" value="2" id="227"><label for="227">☆</label>
+                        <input type="radio" name="rating27" value="1" id="127"><label for="127">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 97% Concordanta</span><span class="varsta">  16+</span><span class="nume">Let's be Cops</span></div>
+                </div>  
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/dirty.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="comedie/dirty.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="comedie/dirty_grandpa.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating28" value="5" id="528"><label for="528">☆</label>
+                        <input type="radio" name="rating28" value="4" id="428"><label for="428">☆</label>
+                        <input type="radio" name="rating28" value="3" id="328"><label for="328">☆</label>
+                        <input type="radio" name="rating28" value="2" id="228"><label for="228">☆</label>
+                        <input type="radio" name="rating28" value="1" id="128"><label for="128">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 91% Concordanta</span><span class="varsta">  16+</span><span class="nume">Dirty Grandpa</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/game.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="comedie/game_night.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="comedie/game_night.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating29" value="5" id="529"><label for="529">☆</label>
+                        <input type="radio" name="rating29" value="4" id="429"><label for="429">☆</label>
+                        <input type="radio" name="rating29" value="3" id="329"><label for="329">☆</label>
+                        <input type="radio" name="rating29" value="2" id="229"><label for="229">☆</label>
+                        <input type="radio" name="rating29" value="1" id="129"><label for="129">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 97% Concordanta</span><span class="varsta">  16+</span><span class="nume">Game Night</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/grown.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="comedie/growun_ups.jpg" muted onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="comedie/grown_ups.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating30" value="5" id="530"><label for="530">☆</label>
+                        <input type="radio" name="rating30" value="4" id="430"><label for="430">☆</label>
+                        <input type="radio" name="rating30" value="3" id="330"><label for="330">☆</label>
+                        <input type="radio" name="rating30" value="2" id="230"><label for="230">☆</label>
+                        <input type="radio" name="rating30" value="1" id="130"><label for="130">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 91% Concordanta</span><span class="varsta">  16+</span><span class="nume">Grown Up's</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/red.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="comedie/red_notice.jpg" muted  onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="comedie/red_notice.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating31" value="5" id="531"><label for="531">☆</label>
+                        <input type="radio" name="rating31" value="4" id="431"><label for="431">☆</label>
+                        <input type="radio" name="rating31" value="3" id="331"><label for="331">☆</label>
+                        <input type="radio" name="rating31" value="2" id="231"><label for="231">☆</label>
+                        <input type="radio" name="rating31" value="1" id="131"><label for="131">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 90% Concordanta</span><span class="varsta">  16+</span><span class="nume">Red Notice</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/ride.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="comedie/ride_along.jpg" muted onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="comedie/ride_along.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating32" value="5" id="532"><label for="532">☆</label>
+                        <input type="radio" name="rating32" value="4" id="432"><label for="432">☆</label>
+                        <input type="radio" name="rating32" value="3" id="332"><label for="332">☆</label>
+                        <input type="radio" name="rating32" value="2" id="232"><label for="232">☆</label>
+                        <input type="radio" name="rating32" value="1" id="132"><label for="132">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 96% Concordanta</span><span class="varsta">  16+</span><span class="nume">Ride Along</span></div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="comedie/vacanta.html">
+                <div class="square"> 
+                    <video class="vid" width="280" height="200"   poster="comedie/vacanta_criminala.jpg" muted fullscreen onmouseover="this.play();" onmouseout="this.load();">
+                        <source src="comedie/vacanta.mp4" type="video/mp4" >
+                    </video>
+                    <div class="rating">
+                        <input type="radio" name="rating33" value="5" id="533"><label for="533">☆</label>
+                        <input type="radio" name="rating33" value="4" id="433"><label for="433">☆</label>
+                        <input type="radio" name="rating33" value="3" id="333"><label for="333">☆</label>
+                        <input type="radio" name="rating33" value="2" id="233"><label for="233">☆</label>
+                        <input type="radio" name="rating33" value="1" id="133"><label for="133">☆</label>
+                    </div>
+                    <div class="info"><span class="concordanta"> 92% Concordanta</span><span class="varsta">  16+</span><span class="nume">Vacanta Criminala</span></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>

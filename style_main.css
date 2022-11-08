@@ -1,0 +1,373 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Bebas Neue';
+  background-color: #141414;
+}
+
+.gen {
+  margin-left: 2vw;
+}
+
+.header_trailer {
+  margin-top: -20px;
+  width: 100vw;
+  z-index: -1;
+}
+
+.txt_header {
+  color: white;
+  font-size: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.txt_main {
+  color: white;
+  font-size: 2rem;
+}
+
+.flex-container {
+  margin-left: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  gap: 10px;
+}
+
+.concordanta {
+  color: green;
+  font-size: 1rem;
+  margin-left: 2px;
+}
+
+.square {
+  width: 280px;
+  height: 200px;
+  -webkit-transition: border-radius 200ms ease-out, -webkit-transform 100ms ease-out;
+  transition: border-radius 200ms ease-out, -webkit-transform 100ms ease-out;
+  transition: transform 100ms ease-out, border-radius 200ms ease-out;
+  transition: transform 100ms ease-out, border-radius 200ms ease-out, -webkit-transform 100ms ease-out;
+}
+
+.square:hover {
+  background-color: #181818;
+  border-radius: 10px;
+  -webkit-transform: scale(135%);
+          transform: scale(135%);
+  -webkit-box-shadow: 0 0 2px #000a;
+          box-shadow: 0 0 2px #000a;
+  height: 100%;
+  z-index: 10;
+}
+
+.varsta {
+  color: white;
+  font-size: 1rem;
+  border: 1px solid white;
+  margin-left: 1vw;
+}
+
+.nume {
+  color: white;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.info {
+  opacity: 0;
+}
+
+.square:hover .info {
+  margin-top: -5px;
+  opacity: 1;
+  margin-left: 10px;
+}
+
+.square:hover .rating {
+  opacity: 1;
+}
+
+.but {
+  background-color: green;
+}
+
+.nxt {
+  opacity: 0;
+  width: 30px;
+  height: 200px;
+}
+
+.nxt:hover {
+  opacity: 1;
+}
+
+.row {
+  margin-left: 20px;
+  height: 260px;
+}
+
+@media (max-width: 1900px) {
+  .row {
+    height: 520px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .row {
+    height: 780px;
+  }
+}
+
+.nav_avatar {
+  margin: auto;
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.nav {
+  position: fixed;
+  top: 5;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav_black {
+  background-color: black;
+}
+
+.slider {
+  margin-top: -30px;
+}
+
+.drop {
+  background: transparent;
+  border: 0px;
+  font-size: 1.5rem;
+}
+
+.dropdown {
+  margin-right: 85vw;
+}
+
+.listamea {
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+.span1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+.inp {
+  width: 500px;
+  height: 50px;
+  background-color: darkgray;
+}
+
+.formprof {
+  margin-right: 300px;
+}
+
+.avatarProfil {
+  width: 300px;
+  height: 300px;
+}
+
+.avt:hover {
+  -webkit-transform: scale(145%);
+          transform: scale(145%);
+}
+
+.rating {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -30px;
+  opacity: 0;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  position: relative;
+  font-size: 20px;
+  color: #FFD700;
+  cursor: pointer;
+}
+
+.rating > label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before {
+  opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before {
+  opacity: 0.4;
+}
+
+.main_sign {
+  margin-top: 10vh;
+  background-color: #1f2229;
+  width: 600px;
+  height: 700px;
+  -webkit-box-shadow: 10px 10px 10px 10px  #141414;
+          box-shadow: 10px 10px 10px 10px  #141414;
+}
+
+.inpt {
+  margin-left: -10px;
+  width: 300px;
+  height: 40px;
+  background-color: white;
+  border-radius: 13px;
+}
+
+.cerc1 {
+  z-index: 1;
+  position: absolute;
+  background-color: #f85052;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 3px;
+  border: 4px solid #8a3a3f;
+}
+
+.cerc2 {
+  z-index: 1;
+  position: absolute;
+  background-color: #f85052;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 90px;
+  border: 4px solid #8a3a3f;
+}
+
+.cerc3 {
+  z-index: 1;
+  position: absolute;
+  background-color: #f85052;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 180px;
+  border: 4px solid #8a3a3f;
+}
+
+.cerc4 {
+  z-index: 1;
+  position: absolute;
+  background-color: #f85052;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 270px;
+  border: 4px solid #8a3a3f;
+}
+
+.legatura1 {
+  z-index: 1;
+  position: absolute;
+  background-color: #f85052;
+  width: 3px;
+  height: 60px;
+  margin-left: 63px;
+  margin-top: 32px;
+}
+
+.legatura2 {
+  z-index: 1;
+  position: absolute;
+  background-color: #f85052;
+  width: 3px;
+  height: 60px;
+  margin-left: 63px;
+  margin-top: 120px;
+}
+
+.legatura3 {
+  z-index: 1;
+  position: absolute;
+  background-color: #f85052;
+  width: 3px;
+  height: 60px;
+  margin-left: 63px;
+  margin-top: 210px;
+}
+
+.main_log {
+  margin-top: 10vh;
+  background-color: #1f2229;
+  width: 600px;
+  height: 500px;
+  -webkit-box-shadow: 10px 10px 10px 10px  #141414;
+          box-shadow: 10px 10px 10px 10px  #141414;
+}
+
+#change {
+  background-color: #1f2229;
+  position: absolute;
+  width: 40px;
+  margin-left: 150px;
+  margin-top: 247px;
+  border: none;
+}
+/*# sourceMappingURL=style_main.css.map */

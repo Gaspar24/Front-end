@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style_main.css">
+    <title>Document</title>
+    <style>
+       body{
+           background-image: url("background2.jpg");
+           color: white;
+           text-align: center;
+       }
+       .header{
+           background-color: black;
+           height: 50px;
+       }
+       #submit_singup{
+            width: 200px;
+            margin: auto;
+            border-radius: 30px;
+       }
+       #log{
+           margin-top: 5px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-10">
+                <h1>Movie Time</h1>
+            </div>
+            <div class="col">
+                <a href="index_login.html">
+                    <button class="btn btn-danger " id="log">Log-in</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main_sign">
+        <div class="row">
+            <div class="col">
+                <form class="form_singup"  action="index_login.html">
+                    <br>
+                    <br>
+                    <h1>Create Your Account</h1>
+                    <p style="font-size :1.5rem; ;">In 4 Simple Steps </p><br>
+                    <div class="cerc1"></div>
+                    <div class="legatura1"></div>
+                    <div class="cerc2"></div>
+                    <div class="legatura2"></div>
+                    <div class="cerc3"></div>
+                    <div class="legatura3"></div>
+                    <div class="cerc4"></div>
+                    
+                    <input class="inpt" type="text" placeholder=" First Name" id="firstName"><br><br><br>
+                    <input class="inpt" type="text" placeholder=" Last Name" id="lastName"><br><br><br>
+                    <input class="inpt" type="email" placeholder=" something@yahoo.com" id="emailS"><br><br><br>
+                    <input class="inpt" type="password" id="passwordS" name=" password" placeholder = " password"minlength="8" required><br><br><br>
+                    <button id="submit_singup" class="btn btn-danger" onclick="register()">Sign-Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

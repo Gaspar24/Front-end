@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+   
+    <title>Profil</title>
+    <style>
+        body{
+        overflow-x: hidden;
+        font-family: 'Bebas Neue';
+        /* background-color: #141414; */
+        font-size: 2rem;
+        color: white;
+        background-image: url("https://img.freepik.com/free-photo/empty-space-product-show-dark-room-with-light-spot-background_152359-580.jpg?w=2000");
+        
+     
+    }
+    h1{
+        color: white;
+    }
+    .nav1{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .btn{
+         width: 100px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+   
+    </style>
+     <link rel="stylesheet" href="style_main.css">
+</head>
+<body>
+    <div class="container-fluid nav1">
+        <div>
+            <h1>Profil</h1>
+        </div>
+        <div><a href="index_main.html"><button class="btn btn-danger">Home</button></a></div>
+    </div>
+    <div class="container prof">
+        <div class="row">
+            <div class="col">
+                <img src="avatar/avatar-blue.png"  id="avatarPicture"alt="" class="avatarProfil"> 
+                <br>
+                <br>
+                <img class="avt" src="avatar/avatar-orange.png" alt="" width="56px" id="avtO">
+                <img  class="avt"src="avatar/avatar-red.png" alt="" width="56px" id="avtR">
+                <img  class="avt"src="avatar/avatar-blue.png" alt="" width="56px" id="avtB">
+                <img  class="avt"src="avatar/avatar-green.png" alt="" width="56px" id="avtG">
+                <img  class="avt"src="avatar/avatar-cocos.png" alt="" width="56px" id="avtC">
+                <br>               
+                <p>Nume: <span id="nameChange"></span></p>
+                <p>Email: <span id="emailChange">ceva@yahoo.com</span></p>
+                <p>password: <span  id="passwordChange" >12345678</span></p>
+            </div>
+            <div class="col">
+                <p>Update info</p>
+                <form class="formprof">
+                    <input class="inp" type="text" placeholder="Name" id="textprof"><br>
+                    <br>
+                    <input  class="inp" type="email" placeholder="@email" id="emailprof"><br>
+                    <br>
+                    <input  class="inp" type="password" placeholder="password" id="passwordprof"><br>
+                    <br>
+                    <button class="btn btn-success" type="button" style=" width:150px" id="update1"><i class="fa fa-gear"></i> update</button>
+                </form>
+            </div>
+        </div>
+            
+        
+    </div>
+
+</body>
+</html>
